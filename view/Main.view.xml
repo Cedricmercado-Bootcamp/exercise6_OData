@@ -1,0 +1,51 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m" 
+          controllerName="sapips.training.odata.controller.Main">
+    
+    <Page id="page" title="{i18n>title}">
+      <content>
+        <Table noDataText="Drop column list items here and columns in the area above" id="oProductListItem" items="{/Products}">
+        <items>
+          <ColumnListItem type="Active" id="item0">
+            <cells>
+            <ObjectIdentifier id="ObjectProduct" title="{ProductName}" text="{i18n>ProductID} {ProductID} "/> 
+              <Text text="{SupplierID}" id="text3"/>
+            <ObjectIdentifier id="ObjectPrice" title="{UnitPrice}" text="{QuantityPerUnit} "/> 
+            </cells>
+        </ColumnListItem>
+        </items>
+
+        <columns>
+          <Column id="column0">
+            <header>
+              <Label text="{i18n>Product}" id="labelProduct"/>
+            </header>
+          </Column>
+          <Column id="column1">
+            <header>
+              <Label text="{i18n>SupplierID}" id="labelSuppID"/>
+            </header>
+          </Column>
+          <Column id="column2">
+            <header>
+              <Label text="{i18n>Price}" id="labelPrice"/>
+            </header>
+          </Column></columns>
+        
+        <headerToolbar>
+          <Toolbar width="100%" id="toolbar1">
+            <content>
+              <Title xmlns="sap.m" text="{i18n>Products}" id="title0"/>
+            </content>
+          </Toolbar>
+        </headerToolbar>
+        <infoToolbar>
+          <Toolbar width="100%" id="toolbar2">
+            <content>
+              <Text xmlns="sap.m" text="{i18n>Widerangeofavailprod}" id="text2"/>
+            </content>
+          </Toolbar>
+        </infoToolbar></Table>
+      </content>
+    </Page>
+</mvc:View>
