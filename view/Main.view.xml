@@ -14,7 +14,6 @@
             </cells>
         </ColumnListItem>
         </items>
-
         <columns>
           <Column id="column0">
             <header>
@@ -31,7 +30,6 @@
               <Label text="{i18n>Price}" id="labelPrice"/>
             </header>
           </Column></columns>
-        
         <headerToolbar>
           <Toolbar width="100%" id="toolbar1">
             <content>
